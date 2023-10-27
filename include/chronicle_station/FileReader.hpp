@@ -27,7 +27,7 @@ namespace ChronicleStation {
             fileSize = (int) fileStat.st_size;
 
             if (fileSize != 0x20000) {
-                throw ChronicleStationException("Unexpected file size (131072k expected)");
+                throw ChronicleStationException("Unexpected file size (131072 bytes expected)");
             }
 
             typedef std::istream_iterator<unsigned char> istream_iterator;
